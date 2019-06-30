@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bennyhwanggggg.github.io/Personal-website",
+  "homepage": "https://bennyhwanggggg.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.0",
