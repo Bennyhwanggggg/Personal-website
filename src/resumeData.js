@@ -24,42 +24,125 @@ let resumeData = {
         "specialization":"Information Technology",
         "MonthOfPassing":"July 2017",
         "YearOfPassing":"- May 2019",
-        "Achievements":"I completed my masters by studying full time with full time work and achieved grade of 83.4 (GPA: 4.0/4.0). Also has a strong focus on computer science, AI and distributed system courses. Besides these main focus, I also experienced some computer graphics programming with OpenGL as I have a strong interest in graphics rendering for movie special effects and making games."
+        "Achievements":"I completed my masters by studying full time with full time work and achieved grade of 83.4 (GPA: 4.0/4.0). In this degree, I had a strong focus on computer science, AI and distributed system courses. Besides these main focus, I also experienced some computer graphics programming with OpenGL as I have a strong interest in graphics rendering for movie special effects and making games."
       },
       {
         "UniversityName":"University of Sydney",
         "specialization":"Mechanical and AeroSpace",
         "MonthOfPassing":"March 2013",
         "YearOfPassing":"- November 2016",
-        "Achievements":"Some Achievements"
+        "Achievements":"I graduated my bacheolors in mechanical and aerospace engineering with first class honors. In this degree, I specialized in AI, search algorithm and space satellite simulations."
       }
     ],
     "work":[
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "CompanyName":"WiseTech Global",
+        "specialization":"Software Engineer",
+        "MonthOfLeaving":"July 2019",
+        "YearOfLeaving":"- Present",
+        "Achievements":"Help innovate and develop software solutions to the logistics industry."
       },
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
+        "CompanyName":"Inkerz",
+        "specialization":"Software Developer",
+        "MonthOfLeaving":"April 2019",
+        "YearOfLeaving":"- June 2019 ",
+        "Achievements":"Inkerz is a technology company that is working on revolutionizing the way people host web meetings. At Inkerz, I worked as a full stack developer to help develop an innovative software that translate physical handwritings onto digital whiteboards so that people can colloborate on the same piece of paper together anywhere."
+      },
+      {
+        "CompanyName":"Ascent Robotics",
+        "specialization":"Software and Robotics Engineer Intern",
+        "MonthOfLeaving":"November 2018",
+        "YearOfLeaving":"- Feburary 2019 ",
+        "Achievements":"Ascent Robotics is a AI company that is focusing on leading edge self driving car and robotics technology. In my internship at Ascent Robtoics, I helped develop the next generation of industrial robots using AI. I was solely resposible for the industrial robot arm server that would be responsible for their controls and AI model usage. Some of the interesting problem we solve here was breaking the tradition that robot arms needs to be hard coded to perform a task as they are not 'smart' enough to adapt to object changes by using deep learning and reinforce learning solutions."
+      },
+      {
+        "CompanyName":"EUtility",
+        "specialization":"Software Engineer",
+        "MonthOfLeaving":"Jan 2018",
+        "YearOfLeaving":"- October 2018 ",
+        "Achievements":"Eutility is a energy consultancy/broker that aims to solve people's utility issues. Here, I was mainly responsible for various internal tools after moving from the Data Analyst role. Here, my role focused on building tools that would help out sales managers and mechanical engineers when they are on-site visits or other software that make internal office work flow smoother. These include various report generation APIs and also Python scripts that automate various repetitive tasks. I was also responsible for the redesign of the alert system by implementing my own anomaly detection algorithm."
+      },
+      {
+        "CompanyName":"EUtility",
+        "specialization":"Data Analyst",
+        "MonthOfLeaving":"April 2017",
+        "YearOfLeaving":"- December 2017 ",
+        "Achievements":"Eutility is a energy consultancy/broker that aims to solve people's utility issues. I started as a Data Analyst here where I was responsible for solving energy alert tickets by looking into various client's utility usage data. I also got to work on building data pipelines to make analysis easier in Tableau dashboards."
+      },
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"Programming Languages",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"Python",
+        "alias":"python"
       },
       {
-        "skillname":"CSS"
+        "skillname":"Java",
+        "alias":"java"
       },
       {
-        "skillname":"Reactjs"
+        "skillname":"JavaScript",
+        "alias":"javascript"
+      },
+      {
+        "skillname":"C#",
+        "alias":"csharp"
+      },
+      {
+        "skillname":"Scala",
+        "alias":"scala"
+      },
+      {
+        "skillname":"C++",
+        "alias":"cpp"
+      },
+      {
+        "skillname":"C",
+        "alias":"c"
+      },
+    ],
+    "skillsDescription2":"Technical Knowledges and Tools",
+    "skills2":[
+      {
+        "skillname":"Web Development",
+        "alias":"webdev"
+      },
+      {
+        "skillname":"Data Analytics",
+        "alias":"dataanalytics"
+      },
+      {
+        "skillname":"Database",
+        "alias":"sql"
+      },
+      {
+        "skillname":"Computer Vision",
+        "alias":"computervision"
+      },
+      {
+        "skillname":"Machine Learning",
+        "alias":"machinelearning"
+      },
+      {
+        "skillname":"Cloud Technologies",
+        "alias":"cloud"
+      },
+      {
+        "skillname":"DevOps",
+        "alias":"devops"
+      },
+      {
+        "skillname":"Spark",
+        "alias":"spark"
+      },
+      {
+        "skillname":"Hadoop",
+        "alias":"hadoop"
+      },
+      {
+        "skillname":"Operating System",
+        "alias":"os"
       }
     ],
     "portfolio":[
