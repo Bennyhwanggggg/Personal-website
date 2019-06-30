@@ -16,21 +16,21 @@ let resumeData = {
           "className":"fa fa-github"
         },
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+    "aboutme":"Software Engineer with experience in robotics, AI and bulding large scale web applications. A graduate of Master of IT from University of New Sout Wales and First class honors of Bachelor of Mechanical and Aerpospace Engineering from University of Sydney. A quick learner and problem solver who is currently diving deeper into Machine Learning and Computer Vision. Spends his spare time playing tennis, exercising and plays some video games.",
     "address":"Email: bennyhwangg@gmail.com",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
+        "UniversityName":"University of New South Wales",
+        "specialization":"Information Technology",
+        "MonthOfPassing":"July 2017",
+        "YearOfPassing":"- May 2019",
+        "Achievements":"I completed my masters by studying full time with full time work and achieved grade of 83.4 (GPA: 4.0/4.0). Also has a strong focus on computer science, AI and distributed system courses. Besides these main focus, I also experienced some computer graphics programming with OpenGL as I have a strong interest in graphics rendering for movie special effects and making games."
       },
       {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
+        "UniversityName":"University of Sydney",
+        "specialization":"Mechanical and AeroSpace",
+        "MonthOfPassing":"March 2013",
+        "YearOfPassing":"- November 2016",
         "Achievements":"Some Achievements"
       }
     ],
