@@ -133,13 +133,13 @@ let resumeData = {
         "alias":"devops"
       },
       {
-        "skillname":"Spark",
+        "skillname":"Distributed System",
         "alias":"spark"
       },
-      {
-        "skillname":"Hadoop",
-        "alias":"hadoop"
-      },
+      // {
+      //   "skillname":"Hadoop",
+      //   "alias":"hadoop"
+      // },
       {
         "skillname":"Operating System",
         "alias":"os"
