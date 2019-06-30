@@ -109,7 +109,7 @@ let resumeData = {
         "alias":"webdev"
       },
       {
-        "skillname":"Data Analytics",
+        "skillname":"Data Analytics and Engineering",
         "alias":"dataanalytics"
       },
       {
