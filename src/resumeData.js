@@ -40,7 +40,7 @@ let resumeData = {
         "specialization":"Software Engineer",
         "MonthOfLeaving":"July 2019",
         "YearOfLeaving":"- Present",
-        "Achievements":"Help innovate and develop software solutions to the logistics industry."
+        "Achievements":"Here, I worked as a software engineer to help WiseTech Global innovate and develop software solutions to the logistics industry."
       },
       {
         "CompanyName":"Inkerz",
@@ -54,7 +54,7 @@ let resumeData = {
         "specialization":"Software and Robotics Engineer Intern",
         "MonthOfLeaving":"November 2018",
         "YearOfLeaving":"- Feburary 2019 ",
-        "Achievements":"Ascent Robotics is a AI company that is focusing on leading edge self driving car and robotics technology. In my internship at Ascent Robtoics, I helped develop the next generation of industrial robots using AI. I was solely resposible for the industrial robot arm server that would be responsible for their controls and AI model usage. Some of the interesting problem we solve here was breaking the tradition that robot arms needs to be hard coded to perform a task as they are not 'smart' enough to adapt to object changes by using deep learning and reinforce learning solutions."
+        "Achievements":"Ascent Robotics is a AI company that is focusing on leading edge self driving car and robotics technology. I decided to take on this internship as I wanted to have a chance to work in another country like Japan, experience a different environment, see what it's like to work with all the talented people from around the world that Ascent has and build next generation's technologies. In my internship at Ascent Robtoics, I helped develop the next generation of industrial robots using AI. I was solely resposible for the industrial robot arm server that would be responsible for their controls and AI model usage. Some of the interesting problem we solve here was breaking the tradition that robot arms needs to be hard coded to perform a task as they are not 'smart' enough to adapt to object changes by using deep learning and reinforce learning solutions."
       },
       {
         "CompanyName":"EUtility",
@@ -69,6 +69,13 @@ let resumeData = {
         "MonthOfLeaving":"April 2017",
         "YearOfLeaving":"- December 2017 ",
         "Achievements":"Eutility is a energy consultancy/broker that aims to solve people's utility issues. I started as a Data Analyst here where I was responsible for solving energy alert tickets by looking into various client's utility usage data. I also got to work on building data pipelines to make analysis easier in Tableau dashboards."
+      },
+      {
+        "CompanyName":"CricDoc",
+        "specialization":"Machine Learning Engineer Intern",
+        "MonthOfLeaving":"March 2016",
+        "YearOfLeaving":"- June 2017 ",
+        "Achievements":"My first work experience was in a small tech startup that focus on building a wristband that analyzes cricket players performance and risk of injury. Here, I got a change to work with gyroscopic and accelerometer data to explore how they relate to balling speed and use machine learning techniques to predict and classify their outcomes."
       },
     ],
     "skillsDescription":"Programming Languages",
@@ -147,25 +154,35 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "name":"WhatBot",
+        "description":"A Student-Teacher Support ChatBot for University of New South Wales.",
+        "imgurl":"images/portfolio/whatbot.png",
+        "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
+        "name":"JFood Blogger",
+        "description":"Japanese Food Theme Blog for people to share their Japanese food experiences.",
+        "imgurl":"images/portfolio/jfoodblogger.jpg",
+        "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
       },
       {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
+        "name":"Rocket Pal",
+        "description":"Project for NASA Spacee App Hackathon in Sydney.",
+        "imgurl":"images/portfolio/nasaspaceapp.png",
+        "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
       },
       {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      }
+        "name":"Sprout Design Home Website",
+        "description":"Designed and developed Sprout Design's company website",
+        "imgurl":"images/portfolio/sproutdesign.jpg",
+        "githublink":"https://github.com/Bennyhwanggggg/Sprout-Design-Web-Dev"
+      },
+      // {
+      //   "name":"WhatBot",
+      //   "description":"This was my master's degree's final semester project where we developed a student-teacher support chatbot for UNSW that aims to assist teacher by answering student's common queries. This was built using Google's Dialogflow as the AI agent along with React.js with Redux as the frontend, and Python Flask, AWS as the backend.",
+      //   "imgurl":"images/portfolio/sproutdesign.jpg",
+      //   "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
+      // },
     ],
     "testimonials":[
       {
