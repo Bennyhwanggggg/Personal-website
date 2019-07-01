@@ -21,7 +21,7 @@ let resumeData = {
           "className":"fa fa-envelope"
         },
       ],
-    "aboutme":"Software Engineer with experience in robotics, AI and bulding large scale web applications. A graduate of Master of IT from University of New Sout Wales and First class honors of Bachelor of Mechanical and Aerpospace Engineering from University of Sydney. A quick learner and problem solver who is currently diving deeper into Machine Learning and Computer Vision. Spends his spare time playing tennis, exercising and plays some video games.",
+    "aboutme":"Software Engineer with experience in robotics, AI and bulding large scale web applications. A graduate of Master of IT from University of New Sout Wales and First class honors of Bachelor of Mechanical and Aerpospace Engineering from University of Sydney. A quick learner and problem solver who is currently diving deeper into Machine Learning and Computer Vision. Spends his spare time playing tennis, exercising and playing some video games.",
     "address":"Email: bennyhwangg@gmail.com",
     "education":[
       {
@@ -121,7 +121,7 @@ let resumeData = {
         "alias":"webdev"
       },
       {
-        "skillname":"Data Analytics and Engineering",
+        "skillname":"Data Analytics and Data Engineering",
         "alias":"dataanalytics"
       },
       {
@@ -147,6 +147,10 @@ let resumeData = {
       {
         "skillname":"Distributed System",
         "alias":"spark"
+      },
+      {
+        "skillname":"Computer Graphics",
+        "alias":"computergraphics"
       },
       // {
       //   "skillname":"Hadoop",
@@ -199,6 +203,12 @@ let resumeData = {
         "description":"Used ray tracing techniques to do light reflections for computer graphics rendering.",
         "imgurl":"images/portfolio/raytracer.png",
         "githublink":"https://github.com/Bennyhwanggggg/Computer-Graphics-Library"
+      },
+      {
+        "name":"Nine Board Tic Tac Toe AI",
+        "description":"Artificial intelligence agents that plays nine board tic tac toe",
+        "imgurl":"images/portfolio/nineboardtictactoe.png",
+        "githublink":"https://github.com/Bennyhwanggggg/Nine-Board-Tic-Tac-Toe-AI-Agent"
       }
       // {
       //   "name":"WhatBot",
