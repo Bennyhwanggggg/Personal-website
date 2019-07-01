@@ -209,6 +209,12 @@ let resumeData = {
         "description":"Artificial intelligence agents that plays nine board tic tac toe.",
         "imgurl":"images/portfolio/nineboardtictactoe.png",
         "githublink":"https://github.com/Bennyhwanggggg/Nine-Board-Tic-Tac-Toe-AI-Agent"
+      },
+      {
+        "name":"Patatap",
+        "description":"Patatap game made using JavaScript",
+        "imgurl":"images/portfolio/patatap.png",
+        "githublink":"https://github.com/Bennyhwanggggg/Simple-Patatap"
       }
       // {
       //   "name":"WhatBot",
