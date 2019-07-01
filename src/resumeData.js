@@ -198,12 +198,12 @@ let resumeData = {
         "imgurl":"images/portfolio/3dworld.png",
         "githublink":"https://github.com/Bennyhwanggggg/3D-World-Simulation"
       },
-      {
-        "name":"Computer Graphics Library",
-        "description":"Computer graphics library that contains various graphics rendering methods like Ray Tracing, Blinn-Phong and Particle Systems.",
-        "imgurl":"images/portfolio/raytracer.png",
-        "githublink":"https://github.com/Bennyhwanggggg/Computer-Graphics-Library"
-      },
+      // {
+      //   "name":"Computer Graphics Library",
+      //   "description":"Computer graphics library that contains various graphics rendering methods like Ray Tracing, Blinn-Phong and Particle Systems.",
+      //   "imgurl":"images/portfolio/raytracer.png",
+      //   "githublink":"https://github.com/Bennyhwanggggg/Computer-Graphics-Library"
+      // },
       {
         "name":"Nine Board Tic Tac Toe AI",
         "description":"Artificial intelligence agents that plays nine board tic tac toe.",
