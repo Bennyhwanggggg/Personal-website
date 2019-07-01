@@ -168,20 +168,38 @@ let resumeData = {
         "name":"JFood Blogger",
         "description":"Japanese Food Theme Blog for people to share their Japanese food experiences.",
         "imgurl":"images/portfolio/jfoodblogger.jpg",
-        "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
+        "githublink":"https://github.com/Bennyhwanggggg/Japanese-Food-Blog-Web-App"
       },
       {
         "name":"Rocket Pal",
         "description":"Project for NASA Spacee App Hackathon in Sydney.",
         "imgurl":"images/portfolio/nasaspaceapp.png",
-        "githublink":"https://github.com/Bennyhwanggggg/WhatBot"
+        "githublink":"https://github.com/Bennyhwanggggg/SpaceAppChallenge",
       },
       {
         "name":"Sprout Design Home Website",
-        "description":"Designed and developed Sprout Design's company website",
+        "description":"Designed and developed Sprout Design's company website.",
         "imgurl":"images/portfolio/sproutdesign.jpg",
         "githublink":"https://github.com/Bennyhwanggggg/Sprout-Design-Web-Dev"
       },
+      {
+        "name":"Super Mario Clone",
+        "description":"Super Mario Bros Clone using C++ and JavaScript.",
+        "imgurl":"images/portfolio/supermario.jpg",
+        "githublink":"https://github.com/Bennyhwanggggg/Super-Mario-Clone-Cpp"
+      },
+      {
+        "name":"3D World Rendering",
+        "description":"Developed a small computer graphics library for Java and OpenGL (JOGL) to render a virtual world.",
+        "imgurl":"images/portfolio/3dworld.png",
+        "githublink":"https://github.com/Bennyhwanggggg/3D-World-Simulation"
+      },
+      {
+        "name":"Ray Tracer",
+        "description":"Used ray tracing techniques to do light reflections for computer graphics rendering.",
+        "imgurl":"images/portfolio/raytracer.png",
+        "githublink":"https://github.com/Bennyhwanggggg/Computer-Graphics-Library"
+      }
       // {
       //   "name":"WhatBot",
       //   "description":"This was my master's degree's final semester project where we developed a student-teacher support chatbot for UNSW that aims to assist teacher by answering student's common queries. This was built using Google's Dialogflow as the AI agent along with React.js with Redux as the frontend, and Python Flask, AWS as the backend.",
