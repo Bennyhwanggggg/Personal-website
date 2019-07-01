@@ -4,6 +4,7 @@ export default class Footer extends Component {
     let resumeData = this.props.resumeData;
     return (
       <footer>
+        Contact me via
       <div className="row">
         <div className="twelve columns">
           <ul className="social-links">

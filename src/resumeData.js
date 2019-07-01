@@ -15,6 +15,11 @@ let resumeData = {
           "url":"http://github.com/bennyhwanggggg",
           "className":"fa fa-github"
         },
+        {
+          "name":"email",
+          "url":"mailto:bennyhwangg@gmail.com",
+          "className":"fa fa-envelope"
+        },
       ],
     "aboutme":"Software Engineer with experience in robotics, AI and bulding large scale web applications. A graduate of Master of IT from University of New Sout Wales and First class honors of Bachelor of Mechanical and Aerpospace Engineering from University of Sydney. A quick learner and problem solver who is currently diving deeper into Machine Learning and Computer Vision. Spends his spare time playing tennis, exercising and plays some video games.",
     "address":"Email: bennyhwangg@gmail.com",
