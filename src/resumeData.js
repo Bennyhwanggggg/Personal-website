@@ -199,14 +199,14 @@ let resumeData = {
         "githublink":"https://github.com/Bennyhwanggggg/3D-World-Simulation"
       },
       {
-        "name":"Ray Tracer",
-        "description":"Used ray tracing techniques to do light reflections for computer graphics rendering.",
+        "name":"Computer Graphics Library",
+        "description":"Computer graphics library that contains various graphics rendering methods like Ray Tracing, Blinn-Phong and Particle Systems.",
         "imgurl":"images/portfolio/raytracer.png",
         "githublink":"https://github.com/Bennyhwanggggg/Computer-Graphics-Library"
       },
       {
         "name":"Nine Board Tic Tac Toe AI",
-        "description":"Artificial intelligence agents that plays nine board tic tac toe",
+        "description":"Artificial intelligence agents that plays nine board tic tac toe.",
         "imgurl":"images/portfolio/nineboardtictactoe.png",
         "githublink":"https://github.com/Bennyhwanggggg/Nine-Board-Tic-Tac-Toe-AI-Agent"
       }
