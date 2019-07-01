@@ -512,7 +512,7 @@ ul#nav li.current a { color: #F06000; }
 /* Portfolio Content */
 #portfolio-wrapper .columns { 
    margin-bottom: 14px;
-   padding: 0 8px;
+   padding: 0 10px;
 }
 .portfolio-item .item-wrap {
    background: #fff;

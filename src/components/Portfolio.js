@@ -16,7 +16,7 @@ export default class Porfolio extends Component {
                     {/* <a href={`${item.link}`}> */}
                       <img src={`${item.imgurl}`} className="item-img" 
                         style={{"width": "100%", 
-                                "height": "170px"}}/>
+                                "height": "220px"}}/>
                       <div className="overlay" style={{"cursor": "pointer"}}>
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
