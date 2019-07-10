@@ -141,6 +141,10 @@ let resumeData = {
         "alias":"cloud"
       },
       {
+        "skillname":"Big Data",
+        "alias":"hadoop"
+      },
+      {
         "skillname":"DevOps",
         "alias":"devops"
       },
@@ -152,10 +156,6 @@ let resumeData = {
         "skillname":"Computer Graphics",
         "alias":"computergraphics"
       },
-      // {
-      //   "skillname":"Hadoop",
-      //   "alias":"hadoop"
-      // },
       {
         "skillname":"Operating System",
         "alias":"os"
