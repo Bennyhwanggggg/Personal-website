@@ -41,12 +41,19 @@ let resumeData = {
     ],
     "work":[
       {
-        "CompanyName":"WiseTech Global",
-        "specialization":"Software Engineer",
-        "MonthOfLeaving":"July 2019",
-        "YearOfLeaving":"- Present",
-        "Achievements":"Here, I worked as a software engineer to help WiseTech Global innovate and develop software solutions to the logistics industry."
-      },
+      "CompanyName": "Amazon Web Services",
+      "specialization": "Software Development Engineer",
+      "MonthOfLeaving": "Mar 2020",
+      "YearOfLeaving": "- Present",
+      "Achievements": " Cracked into FAANG"
+    },
+    {
+      "CompanyName": "WiseTech Global",
+      "specialization": "Software Engineer",
+      "MonthOfLeaving": "July 2019",
+      "YearOfLeaving": "- Feb 2020",
+      "Achievements": " WiseTech Global is a large Australian company with more than 4000 employees globally and provides software solutions to the logistics industry. Here, I worked as a software engineer to create an NLP based search engine that can search through Border Customs documents to help importer and exporters do their jobs more easily. I helped build many data tools for ETL process and also did full stacks work for the main app itself."
+    },
       {
         "CompanyName":"Inkerz",
         "specialization":"Software Developer",
