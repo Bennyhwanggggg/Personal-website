@@ -9,10 +9,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { common } from '@mui/material/colors';
+import { useTheme } from '@mui/material';
 
 const pages = ['Home', 'Resume'];
 
 export const NavBar = () => {
+  const theme = useTheme();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -24,9 +28,9 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" color='primary'>
-      <Container maxWidth="xl" color='primary'>
-        <Toolbar disableGutters sx={{justifyContent: 'space-between'}} color='primary'>
+    <AppBar position="static" color='accent' >
+      <Container maxWidth="xl" >
+        <Toolbar disableGutters sx={{justifyContent: 'space-between' }} >
           <Typography
             variant="h6"
             noWrap
@@ -38,14 +42,14 @@ export const NavBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
+              color: `${theme.palette.text.secondary}`,
             }}
           >
             Benny Hwang
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} color='primary'>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -54,7 +58,7 @@ export const NavBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon color='secondary' />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -71,7 +75,7 @@ export const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none', color: 'secondary' },
               }}
             >
               {pages.map((page) => (
@@ -93,7 +97,7 @@ export const NavBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: `${theme.palette.text.secondary}`,
               textDecoration: 'none',
             }}
           >
@@ -104,7 +108,7 @@ export const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
               >
                 {page}
               </Button>
@@ -112,6 +116,7 @@ export const NavBar = () => {
           </Box>
         </Toolbar>
       </Container>
+      <Box sx={{ borderBottom: `4px solid ${common.black}` }} />
     </AppBar>
   );
 };
