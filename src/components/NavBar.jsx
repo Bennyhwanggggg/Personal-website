@@ -24,9 +24,9 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{justifyContent: 'space-between'}}>
+    <AppBar position="static" color='primary'>
+      <Container maxWidth="xl" color='primary'>
+        <Toolbar disableGutters sx={{justifyContent: 'space-between'}} color='primary'>
           <Typography
             variant="h6"
             noWrap
@@ -45,7 +45,7 @@ export const NavBar = () => {
             Benny Hwang
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} color='primary'>
             <IconButton
               size="large"
               aria-label="account of current user"
