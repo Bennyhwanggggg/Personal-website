@@ -30,7 +30,12 @@ export const NavBar = () => {
   return (
     <AppBar position="static" color='accent' >
       <Container maxWidth="xl" >
-        <Toolbar disableGutters sx={{justifyContent: 'space-between' }} >
+        <Toolbar disableGutters sx={{justifyContent: 'space-between',
+        paddingTop:  '1.4vw',
+        paddingBottom: '0.3vw',
+        paddingLeft: '10vw',
+        paddingRight: '10vw',
+        pointerEvents: 'auto' }} >
           <Typography
             variant="h6"
             noWrap
