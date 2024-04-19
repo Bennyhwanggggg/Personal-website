@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import { Grid, Paper, Typography, Container } from '@mui/material';
+import { Grid, Paper, Typography, Container, Box } from '@mui/material';
 import { useTheme } from '@mui/material';
 
 export const Home = () => {
@@ -8,7 +8,12 @@ export const Home = () => {
     return (
         <>
             <NavBar/>
-            <Grid container spacing={1} display={'flex'} justifyContent={'center'} paddingTop={'6vh'}>
+            <Grid container
+                spacing={1}
+                display={'flex'}
+                justifyContent={'center'}
+                alignItems={'center'}
+                paddingTop={'6vh'}>
                 <Grid item xs={12} sm={6}>
                     <Paper elevation={3} sx={{
                         backgroundColor: `${theme.palette.primary.main}`,
@@ -19,7 +24,14 @@ export const Home = () => {
                                 >Hi I'm Benny
                             </Typography>
                         </Container>
-                </Paper>
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Box component='img'
+                        sx={{ width: '60%'}}
+                        alt='Profile image'
+                        src={`${process.env.PUBLIC_URL}/profile_image.jpg`}
+                         />
                 </Grid>
             </Grid>
         </>
