@@ -31,6 +31,7 @@ export const Home = () => {
                         sx={{ width: '60%'}}
                         alt='Profile image'
                         src={`${process.env.PUBLIC_URL}/profile_image.jpg`}
+                        borderRadius={4}
                          />
                 </Grid>
             </Grid>
