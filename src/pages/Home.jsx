@@ -14,7 +14,7 @@ export const Home = () => {
                 justifyContent={'center'}
                 alignItems={'center'}
                 paddingTop={'6vh'}>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} display={'flex'} sx={{justifyContent: { xs: 'center', sm: 'flex-end'}}}>
                     <Paper elevation={3} sx={{
                         backgroundColor: `${theme.palette.primary.main}`,
                         width: '60%',
@@ -26,7 +26,7 @@ export const Home = () => {
                         </Container>
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} display={'flex'} sx={{justifyContent: { xs: 'center', sm: 'flex-start'}}}>
                     <Box component='img'
                         sx={{ width: '60%'}}
                         alt='Profile image'
