@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
+// import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+// import MenuItem from '@mui/material/MenuItem';
 import { common } from '@mui/material/colors';
-import { useTheme } from '@mui/material';
+import { Drawer, ListItem, useTheme } from '@mui/material';
 
 const pages = ['Home', 'Resume'];
 
@@ -57,7 +57,7 @@ export const NavBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="menu icon"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -65,7 +65,35 @@ export const NavBar = () => {
             >
               <MenuIcon color='secondary' />
             </IconButton>
-            <Menu
+            <React.Fragment key={anchorElNav}>
+                <Drawer anchorEl={anchorElNav}
+                    anchor='top'
+                    open={Boolean(anchorElNav)}
+                    onClose={handleCloseNavMenu}
+                    ModalProps={{
+                        keepMounted: true, // Better open performance on mobile.
+                    }}
+                    sx={{
+                        height: '100vh',
+                    }}
+                    PaperProps={{ sx: {
+                            width: '100%',
+                            height: '100%',
+                            backgroundColor: `${theme.palette.primary.main}`
+                        }}
+                    }
+                >
+                    <Typography variant='h3'>
+                        Benny Hwang
+                    </Typography>
+                    {pages.map((page) => (
+                        <ListItem key={page} onClick={handleCloseNavMenu}>
+                            <Typography textAlign="center">{page}</Typography>
+                        </ListItem>
+                    ))}
+                </Drawer>
+            </React.Fragment>
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -88,7 +116,7 @@ export const NavBar = () => {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
           <Typography
             variant="h5"
