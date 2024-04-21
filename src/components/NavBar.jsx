@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-// import MenuItem from '@mui/material/MenuItem';
+import CloseIcon from '@mui/icons-material/Close';
 import { common } from '@mui/material/colors';
 import { Drawer, ListItem, useTheme } from '@mui/material';
 
@@ -79,18 +79,45 @@ export const NavBar = () => {
                     PaperProps={{ sx: {
                             width: '100%',
                             height: '100%',
-                            backgroundColor: `${theme.palette.primary.main}`
+                            backgroundColor: `${theme.palette.primary.main}`,
                         }}
                     }
                 >
-                    <Typography variant='h3'>
-                        Benny Hwang
-                    </Typography>
-                    {pages.map((page) => (
-                        <ListItem key={page} onClick={handleCloseNavMenu}>
-                            <Typography textAlign="center">{page}</Typography>
-                        </ListItem>
-                    ))}
+                    <Box sx={{
+                        paddingTop: '7vw',
+                        paddingBottom: '7vw',
+                        paddingLeft: '6vw',
+                        paddingRight: '6vw',
+                        height: '100%'
+                    }}
+                    >
+                        <Box display={'flex'}
+                            alignContent={'center'}
+                            alignItems={'center'}
+                            justifyContent={'space-between'}
+                            sx={{flexDirection: 'row',
+                                flexWrap: 'nowrap'}}
+                        >
+                            <Typography variant='h4'>
+                                Benny Hwang
+                            </Typography>
+                            <CloseIcon onClick={handleCloseNavMenu}/>
+                        </Box>
+                        <Box height={'100%'}
+                            width={'100%'}
+                            display={'flex'}
+                            flexDirection={'column'}
+                            flexWrap={'nowrap'}
+                            justifyContent={'center'}
+                            alignContent={'center'}
+                        >
+                            {pages.map((page) => (
+                                <ListItem key={page} onClick={handleCloseNavMenu} justifyContent={'center'}>
+                                    <Typography textAlign="center">{page}</Typography>
+                                </ListItem>
+                            ))}
+                        </Box>
+                    </Box>
                 </Drawer>
             </React.Fragment>
             {/* <Menu
