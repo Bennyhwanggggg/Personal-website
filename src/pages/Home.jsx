@@ -18,6 +18,7 @@ export const Home = () => {
                     <Paper elevation={3} sx={{
                         backgroundColor: `${theme.palette.primary.main}`,
                         width: '50%',
+                        marginBottom: { sm: '15vh'},
                     }}>
                         <Container sx={{ padding: '1em'}}>
                             <Typography paragraph
@@ -46,7 +47,7 @@ export const Home = () => {
                                 paragraph
                                 lineHeight={2}
                                 sx={{color: `${theme.palette.text.primary}`}}
-                                >👋 Contact me on: bennyhwangg@gmail.com
+                                >👋 Get in Touch: bennyhwangg@gmail.com
                             </Typography>
                         </Container>
                     </Paper>
