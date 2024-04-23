@@ -18,6 +18,7 @@ export const Home = () => {
                     <Paper elevation={3} sx={{
                         backgroundColor: `${theme.palette.primary.main}`,
                         width: '50%',
+                        minWidth: '300px',
                         marginBottom: { sm: '15vh'},
                     }}>
                         <Container sx={{ padding: '1em'}}>
