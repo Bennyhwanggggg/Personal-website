@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-// import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
@@ -25,6 +24,13 @@ export const NavBar = () => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleOnNavItemClick = (page) => {
+    switch(page) {
+        case 'Resume':
+            window.open('https://docs.google.com/document/d/1ZaSMdYVZcm8wK1P5yFI_QNrFohmvEsdxdL8n7BMDBC8/edit?usp=sharing', '_blank');
+    }
   };
 
   return (
@@ -113,37 +119,16 @@ export const NavBar = () => {
                         >
                             {pages.map((page) => (
                                 <ListItem key={page} onClick={handleCloseNavMenu} justifyContent={'center'}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center"
+                                        onClick={() => handleOnNavItemClick(page)}
+                                        >{page}
+                                    </Typography>
                                 </ListItem>
                             ))}
                         </Box>
                     </Box>
                 </Drawer>
             </React.Fragment>
-            {/* <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none', color: 'secondary' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
           </Box>
           <Typography
             variant="h5"
