@@ -170,7 +170,10 @@ export const NavBar = () => {
                         <IconButton key={page}
                             disableRipple={true}
                             onClick={() => handleOnNavItemClick(page)}>
-                            <FontAwesomeIcon icon='fa-brands fa-github'/>
+                            <FontAwesomeIcon icon='fa-brands fa-github'
+                                style={{
+                                    color: `${theme.palette.secondary.main}`
+                                }}/>
                         </IconButton>
                     );
                 } else {
