@@ -161,7 +161,9 @@ export const NavBar = () => {
             {pages.map((page) => {
                 if (page === 'Github') {
                     return(
-                        <IconButton key={page} onClick={() => handleOnNavItemClick(page)}>
+                        <IconButton key={page}
+                            disableRipple={true}
+                            onClick={() => handleOnNavItemClick(page)}>
                             <FontAwesomeIcon icon='fa-brands fa-github'/>
                         </IconButton>
                     );
@@ -169,6 +171,7 @@ export const NavBar = () => {
                    return (
                         <Button
                             key={page}
+                            disableRipple={true}
                             onClick={() => handleOnNavItemClick(page)}
                             sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
                         >
