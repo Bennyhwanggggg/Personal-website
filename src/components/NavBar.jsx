@@ -190,7 +190,7 @@ export const NavBar = () => {
                                     width: '0%',
                                     height: 2,
                                     backgroundColor: `${theme.palette.text.secondary}`,
-                                    transition: 'left 0.3s cubic-bezier(0.19, 1, 0.22, 1), width 0.3s cubic-bezier(0.19, 1, 0.22, 1)', // Transition both left and width
+                                    transition: 'left 0.2s transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); transition-duration: 0.4s; transition-delay: 0.111111s;, width 0.3s cubic-bezier(0.19, 1, 0.22, 1)', // Transition both left and width
                                   },
                                 '&:hover::after': {
                                     width: '100%',
