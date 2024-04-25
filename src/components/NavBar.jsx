@@ -13,7 +13,7 @@ import { Drawer, ListItem, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const pages = ['Home', 'Resume', 'Github'];
+const pages = ['Home', 'Resume', 'Github', 'Linkedin'];
 
 export const NavBar = () => {
   const theme = useTheme();
@@ -39,6 +39,9 @@ export const NavBar = () => {
             break;
         case 'Github':
             window.open('https://github.com/Bennyhwanggggg', '_blank');
+            break;
+        case 'Linkedin':
+            window.open('https://www.linkedin.com/in/benny-hwang-35b077104/', '_blank');
             break;
     }
   };
@@ -171,6 +174,17 @@ export const NavBar = () => {
                             disableRipple={true}
                             onClick={() => handleOnNavItemClick(page)}>
                             <FontAwesomeIcon icon='fa-brands fa-github'
+                                style={{
+                                    color: `${theme.palette.secondary.main}`
+                                }}/>
+                        </IconButton>
+                    );
+                } else if (page === 'Linkedin') {
+                    return (
+                        <IconButton key={page}
+                            disableRipple={true}
+                            onClick={() => handleOnNavItemClick(page)}>
+                            <FontAwesomeIcon icon='fa-brands fa-linkedin'
                                 style={{
                                     color: `${theme.palette.secondary.main}`
                                 }}/>
