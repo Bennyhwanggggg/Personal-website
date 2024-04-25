@@ -14,6 +14,11 @@ import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const pages = ['Home', 'Resume', 'Github', 'Linkedin'];
+const iconPages = ['Github', 'Linkedin'];
+const pageToIcon = {
+    'Github': 'fa-brands fa-github',
+    'Linkedin': 'fa-brands fa-linkedin',
+};
 
 export const NavBar = () => {
   const theme = useTheme();
@@ -106,8 +111,12 @@ export const NavBar = () => {
                         paddingBottom: '7vw',
                         paddingLeft: '6vw',
                         paddingRight: '6vw',
-                        height: '100%'
+                        height: '100%',
                     }}
+                    display={'flex'}
+                    flexDirection={'column'}
+                    flexWrap={'nowrap'}
+                    justifyContent={'space-between'}
                     >
                         <Box display={'flex'}
                             alignContent={'center'}
@@ -121,15 +130,14 @@ export const NavBar = () => {
                             </Typography>
                             <CloseIcon onClick={handleCloseNavMenu}/>
                         </Box>
-                        <Box height={'100%'}
-                            width={'100%'}
+                        <Box width={'100%'}
                             display={'flex'}
                             flexDirection={'column'}
                             flexWrap={'nowrap'}
                             justifyContent={'center'}
                             alignContent={'center'}
                         >
-                            {pages.map((page) => (
+                            {pages.filter(page => !iconPages.includes(page)).map((page) => (
                                 <ListItem key={page}
                                     onClick={handleCloseNavMenu}
                                     sx={{ justifyContent: 'center',
@@ -143,6 +151,25 @@ export const NavBar = () => {
                                     </Typography>
                                 </ListItem>
                             ))}
+                        </Box>
+                        <Box display={'flex'}
+                            alignContent={'center'}
+                            alignItems={'center'}
+                            justifyContent={'center'}
+                            sx={{flexDirection: 'row',
+                                flexWrap: 'nowrap'}}
+                        >
+                            {pages.filter(page => iconPages.includes(page)).map((page) => (
+                                <IconButton key={page}
+                                    disableRipple={true}
+                                    onClick={() => handleOnNavItemClick(page)}>
+                                    <FontAwesomeIcon icon={pageToIcon[page]}
+                                        style={{
+                                            color: `${theme.palette.secondary.main}`
+                                        }}/>
+                                </IconButton>
+                                ))
+                            }
                         </Box>
                     </Box>
                 </Drawer>
@@ -168,23 +195,12 @@ export const NavBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex', p: 1 } }}>
             {pages.map((page) => {
-                if (page === 'Github') {
-                    return(
-                        <IconButton key={page}
-                            disableRipple={true}
-                            onClick={() => handleOnNavItemClick(page)}>
-                            <FontAwesomeIcon icon='fa-brands fa-github'
-                                style={{
-                                    color: `${theme.palette.secondary.main}`
-                                }}/>
-                        </IconButton>
-                    );
-                } else if (page === 'Linkedin') {
+                if (iconPages.includes(page)) {
                     return (
                         <IconButton key={page}
                             disableRipple={true}
                             onClick={() => handleOnNavItemClick(page)}>
-                            <FontAwesomeIcon icon='fa-brands fa-linkedin'
+                            <FontAwesomeIcon icon={pageToIcon[page]}
                                 style={{
                                     color: `${theme.palette.secondary.main}`
                                 }}/>
