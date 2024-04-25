@@ -127,7 +127,13 @@ export const NavBar = () => {
                             alignContent={'center'}
                         >
                             {pages.map((page) => (
-                                <ListItem key={page} onClick={handleCloseNavMenu} sx={{ justifyContent: 'center'}}>
+                                <ListItem key={page}
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ justifyContent: 'center',
+                                        '&:hover': {
+                                            cursor: 'pointer',
+                                            textDecoration: 'underline',
+                                        }}}>
                                     <Typography textAlign="center"
                                         onClick={() => handleOnNavItemClick(page)}
                                         >{page}
@@ -173,7 +179,22 @@ export const NavBar = () => {
                             key={page}
                             disableRipple={true}
                             onClick={() => handleOnNavItemClick(page)}
-                            sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
+                            sx={{ my: 2,
+                                display: 'block',
+                                color: `${theme.palette.text.secondary}`,
+                                '&::after': {
+                                    content: '""',
+                                    position: 'absolute',
+                                    left: 0,
+                                    bottom: 0,
+                                    width: '0%',
+                                    height: 2,
+                                    backgroundColor: `${theme.palette.text.secondary}`,
+                                    transition: 'left 0.3s cubic-bezier(0.19, 1, 0.22, 1), width 0.3s cubic-bezier(0.19, 1, 0.22, 1)', // Transition both left and width
+                                  },
+                                '&:hover::after': {
+                                    width: '100%',
+                                }}}
                         >
                             {page}
                         </Button>
