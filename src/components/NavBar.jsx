@@ -10,11 +10,13 @@ import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 import { common } from '@mui/material/colors';
 import { Drawer, ListItem, useTheme } from '@mui/material';
+import { useNavigate } from 'react-router';
 
 const pages = ['Home', 'Resume'];
 
 export const NavBar = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -29,7 +31,12 @@ export const NavBar = () => {
   const handleOnNavItemClick = (page) => {
     switch(page) {
         case 'Resume':
+            console.log('here');
             window.open('https://docs.google.com/document/d/1ZaSMdYVZcm8wK1P5yFI_QNrFohmvEsdxdL8n7BMDBC8/edit?usp=sharing', '_blank');
+            break;
+        case 'Home':
+            navigate('/');
+            break;
     }
   };
 
@@ -72,8 +79,7 @@ export const NavBar = () => {
               <MenuIcon color='secondary' />
             </IconButton>
             <React.Fragment key={anchorElNav}>
-                <Drawer anchorEl={anchorElNav}
-                    anchor='top'
+                <Drawer anchor='top'
                     open={Boolean(anchorElNav)}
                     onClose={handleCloseNavMenu}
                     ModalProps={{
@@ -118,7 +124,7 @@ export const NavBar = () => {
                             alignContent={'center'}
                         >
                             {pages.map((page) => (
-                                <ListItem key={page} onClick={handleCloseNavMenu} justifyContent={'center'}>
+                                <ListItem key={page} onClick={handleCloseNavMenu} sx={{ justifyContent: 'center'}}>
                                     <Typography textAlign="center"
                                         onClick={() => handleOnNavItemClick(page)}
                                         >{page}
@@ -152,7 +158,7 @@ export const NavBar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => handleOnNavItemClick(page)}
                 sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
               >
                 {page}
