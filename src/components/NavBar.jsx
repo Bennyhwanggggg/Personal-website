@@ -128,7 +128,12 @@ export const NavBar = () => {
                             <Typography variant='h4'>
                                 Benny Hwang
                             </Typography>
-                            <CloseIcon onClick={handleCloseNavMenu}/>
+                            <CloseIcon sx={{
+                                '&:hover': {
+                                    cursor: 'pointer',
+                                    textDecoration: 'underline',
+                                }
+                            }} onClick={handleCloseNavMenu}/>
                         </Box>
                         <Box width={'100%'}
                             display={'flex'}
