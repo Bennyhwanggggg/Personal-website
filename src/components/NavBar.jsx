@@ -11,8 +11,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import { common } from '@mui/material/colors';
 import { Drawer, ListItem, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const pages = ['Home', 'Resume'];
+const pages = ['Home', 'Resume', 'Github'];
 
 export const NavBar = () => {
   const theme = useTheme();
@@ -31,11 +32,13 @@ export const NavBar = () => {
   const handleOnNavItemClick = (page) => {
     switch(page) {
         case 'Resume':
-            console.log('here');
             window.open('https://docs.google.com/document/d/1ZaSMdYVZcm8wK1P5yFI_QNrFohmvEsdxdL8n7BMDBC8/edit?usp=sharing', '_blank');
             break;
         case 'Home':
             navigate('/');
+            break;
+        case 'Github':
+            window.open('https://github.com/Bennyhwanggggg', '_blank');
             break;
     }
   };
@@ -155,15 +158,25 @@ export const NavBar = () => {
             Benny Hwang
           </Typography>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex', p: 1 } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={() => handleOnNavItemClick(page)}
-                sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
-              >
-                {page}
-              </Button>
-            ))}
+            {pages.map((page) => {
+                if (page === 'Github') {
+                    return(
+                        <IconButton key={page} onClick={() => handleOnNavItemClick(page)}>
+                            <FontAwesomeIcon icon='fa-brands fa-github'/>
+                        </IconButton>
+                    );
+                } else {
+                   return (
+                        <Button
+                            key={page}
+                            onClick={() => handleOnNavItemClick(page)}
+                            sx={{ my: 2, display: 'block', color: `${theme.palette.text.secondary}` }}
+                        >
+                            {page}
+                        </Button>
+                   );
+                }
+            })}
           </Box>
         </Toolbar>
       </Container>
