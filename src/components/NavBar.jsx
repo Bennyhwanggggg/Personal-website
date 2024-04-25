@@ -150,7 +150,7 @@ export const NavBar = () => {
                                             cursor: 'pointer',
                                             textDecoration: 'underline',
                                         }}}>
-                                    <Typography textAlign="center"
+                                    <Typography textAlign="center" fontSize={30}
                                         onClick={() => handleOnNavItemClick(page)}
                                         >{page}
                                     </Typography>
