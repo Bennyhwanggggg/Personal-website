@@ -9,11 +9,13 @@ export const Home = () => {
         <>
             <NavBar/>
             <Grid container
+                backgroundColor={'white'}
                 spacing={0}
                 display={'flex'}
                 justifyContent={'center'}
                 alignItems={'center'}
-                paddingTop={'10vh'}>
+                paddingTop={'10vh'}
+                paddingBottom={'10vh'}>
                 <Grid item xs={12} sm={6} display={'flex'} sx={{justifyContent: { xs: 'center', sm: 'flex-end'}}}>
                     <Paper elevation={3} sx={{
                         backgroundColor: `${theme.palette.primary.main}`,

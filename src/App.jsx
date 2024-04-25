@@ -13,7 +13,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <div className="App">
+        <div className="App" style={{height: '100%', width: '100%'}}>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />
