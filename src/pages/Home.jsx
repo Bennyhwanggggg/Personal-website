@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import { Grid, Paper, Typography, Container, Box, CardHeader } from '@mui/material';
+import { Grid, Paper, Typography, Container, Box, CardMedia } from '@mui/material';
 import { useTheme } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -93,11 +93,23 @@ export const Home = () => {
                                     minWidth={250}
                                     display={'flex'}>
                                     <Card sx={{ width: '100%',
-                                        height: '30vh'}}
-                                        elevation={3}>
-                                        <CardHeader title={project.title}/>
+                                        height: {xs: '35vh', sm: '40vh', md: '37vh'},
+                                        '&:hover': {
+                                            cursor: 'pointer',
+                                        }}}
+                                        elevation={3}
+                                        onClick={() => window.open(project.url, '_blank')}
+                                        >
+                                        <CardMedia
+                                            component={'img'}
+                                            sx={{
+                                                height: '20vh'
+                                            }}
+                                            image={`${process.env.PUBLIC_URL}/${project.image}`}
+                                        />
                                         <CardContent>
-                                            <Typography>{project.description}</Typography>
+                                            <Typography variant='h5' component="div">{project.title}</Typography>
+                                            <Typography variant='body2'>{project.description}</Typography>
                                         </CardContent>
                                     </Card>
                                 </Grid>
