@@ -13,7 +13,7 @@ import { Drawer, ListItem, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const pages = ['Home', 'Resume', 'Github', 'Linkedin'];
+const pages = ['Home', "Things I've made", 'Resume', 'Github', 'Linkedin'];
 const iconPages = ['Github', 'Linkedin'];
 const pageToIcon = {
     'Github': 'fa-brands fa-github',
@@ -48,6 +48,9 @@ export const NavBar = () => {
         case 'Linkedin':
             window.open('https://www.linkedin.com/in/benny-hwang-35b077104/', '_blank');
             break;
+        case "Things I've made":
+            navigate('/#projects');
+            break;
     }
   };
 
@@ -64,7 +67,7 @@ export const NavBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -125,7 +128,14 @@ export const NavBar = () => {
                             sx={{flexDirection: 'row',
                                 flexWrap: 'nowrap'}}
                         >
-                            <Typography variant='h4'>
+                            <Typography variant='h4'
+                                onClick={() => handleOnNavItemClick('Home')}
+                                sx={{
+                                    '&:hover': {
+                                        cursor: 'pointer',
+                                    }
+                                }}
+                            >
                                 Benny Hwang
                             </Typography>
                             <CloseIcon sx={{
@@ -184,7 +194,7 @@ export const NavBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

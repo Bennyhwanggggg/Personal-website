@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import { Grid, Paper, Typography, Container, Box, CardMedia } from '@mui/material';
 import { useTheme } from '@mui/material';
@@ -6,9 +6,19 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { projects } from '../data/projects';
 import FadeInUp from '../components/FadeInUp';
+import { useLocation } from 'react-router-dom';
 
 export const Home = () => {
     const theme = useTheme();
+    const projectsRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#projects') {
+            projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [location]);
+
     return (
         <>
             <NavBar/>
@@ -78,6 +88,7 @@ export const Home = () => {
                         marginTop={'5vh'}
                         marginBottom={'5vh'}>
                         <Typography paragraph
+                            ref={projectsRef}
                             fontWeight={'bold'}
                             variant='h5'
                             sx={{color: `${theme.palette.text.primary}`}}
