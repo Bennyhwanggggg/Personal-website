@@ -13,7 +13,7 @@ import { Drawer, ListItem, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const pages = ['Home', 'My projects', 'Resume', 'Github', 'Linkedin'];
+const pages = ['Home', 'My Projects', 'Resume', 'Github', 'Linkedin'];
 const iconPages = ['Github', 'Linkedin'];
 const pageToIcon = {
     'Github': 'fa-brands fa-github',
@@ -129,7 +129,10 @@ export const NavBar = () => {
                                 flexWrap: 'nowrap'}}
                         >
                             <Typography variant='h4'
-                                onClick={() => handleOnNavItemClick('Home')}
+                                onClick={() => {
+                                    handleOnNavItemClick('Home');
+                                    handleCloseNavMenu();
+                                }}
                                 sx={{
                                     '&:hover': {
                                         cursor: 'pointer',
