@@ -13,7 +13,7 @@ import { Drawer, ListItem, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const pages = ['Home', "Things I've made", 'Resume', 'Github', 'Linkedin'];
+const pages = ['Home', 'My projects', 'Resume', 'Github', 'Linkedin'];
 const iconPages = ['Github', 'Linkedin'];
 const pageToIcon = {
     'Github': 'fa-brands fa-github',
@@ -48,7 +48,7 @@ export const NavBar = () => {
         case 'Linkedin':
             window.open('https://www.linkedin.com/in/benny-hwang-35b077104/', '_blank');
             break;
-        case "Things I've made":
+        case 'My projects':
             navigate('/#projects');
             break;
     }
