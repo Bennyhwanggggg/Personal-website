@@ -60,7 +60,7 @@ export const Home = () => {
                                         paragraph
                                         lineHeight={2}
                                         sx={{color: `${theme.palette.text.primary}`}}
-                                        >My skills range from building mobile apps, web apps to large scale distributed systems.
+                                        >My experiences range from building mobile apps, web apps to large scale distributed systems.
                                     </Typography>
                                     <Typography fontSize={16}
                                         variant='body1'
