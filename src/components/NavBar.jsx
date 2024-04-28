@@ -48,7 +48,7 @@ export const NavBar = () => {
         case 'Linkedin':
             window.open('https://www.linkedin.com/in/benny-hwang-35b077104/', '_blank');
             break;
-        case 'My projects':
+        case 'My Projects':
             navigate('/#projects');
             break;
     }
