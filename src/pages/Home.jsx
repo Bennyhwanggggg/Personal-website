@@ -52,7 +52,7 @@ export const Home = () => {
                                         paragraph
                                         lineHeight={2}
                                         sx={{color: `${theme.palette.text.primary}`}}
-                                        >I am a software engineer based in Sydney, Australia. I am currently a senior software engineer at Atlassian working on AI platform.
+                                        >I am a software engineer based in Sydney, Australia. I am currently a senior software engineer at Atlassian working on their AI platform.
                                         Previously, I worked at Google, Amazon (AWS), startups and other Australian big techs.
                                     </Typography>
                                     <Typography fontSize={16}
