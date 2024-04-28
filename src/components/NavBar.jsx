@@ -40,7 +40,7 @@ export const NavBar = () => {
             window.open('https://docs.google.com/document/d/1ZaSMdYVZcm8wK1P5yFI_QNrFohmvEsdxdL8n7BMDBC8/edit?usp=sharing', '_blank');
             break;
         case 'Home':
-            navigate('/');
+            navigate('/portfolio');
             break;
         case 'Github':
             window.open('https://github.com/Bennyhwanggggg', '_blank');
@@ -49,7 +49,7 @@ export const NavBar = () => {
             window.open('https://www.linkedin.com/in/benny-hwang-35b077104/', '_blank');
             break;
         case 'My Projects':
-            navigate('/#projects');
+            navigate('/portfolio/#projects');
             break;
     }
   };
@@ -67,7 +67,7 @@ export const NavBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/portfolio"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -197,7 +197,7 @@ export const NavBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="/portfolio"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

@@ -15,8 +15,6 @@ const App = () => {
       <Router>
         <div className="App" style={{height: '100%', width: '100%'}}>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/home' element={<Home />} />
             <Route path='/portfolio' element={<Home />} />
           </Routes>
         </div>
