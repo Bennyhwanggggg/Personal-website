@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: 'Super Mario Bro Clone',
-        url: 'http://super-mario-clone-js.ap-northeast-1.elasticbeanstalk.com/',
+        url: 'http://super-mario-clone-js.s3-website-ap-northeast-1.amazonaws.com/',
         description: 'A rough prototype version of Super Mario Bro on your web browser!',
         image: 'supermario.jpg',
     },
